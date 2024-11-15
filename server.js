@@ -13,6 +13,8 @@ app.use("/api", actorRoutes);
 const options = {
     tls: true,
     sslValidate: true,
+    tlsAllowInvalidCertificates: true,
+    tlsAllowInvalidHostnames: true,
   };
 await client.connect(options).then(() => {
     console.log("db connected")
