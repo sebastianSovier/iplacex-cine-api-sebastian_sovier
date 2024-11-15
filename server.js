@@ -10,13 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", peliculaRoutes);
 app.use("/api", actorRoutes);
 
-const options = {
-    tls: true,
-    sslValidate: true,
-    tlsAllowInvalidCertificates: true,
-    tlsAllowInvalidHostnames: true,
-  };
-await client.connect(options).then(() => {
+await client.connect().then(() => {
     console.log("db connected")
     app.listen(PORT, () => {
         console.log("Server running in port ", PORT)
