@@ -1,0 +1,70 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Angular build output
+dist/
+out-tsc/
+build/
+
+# Environment files
+src/environments/*.ts
+!src/environments/environment.prod.ts  # If you want to keep the production environment file
+
+# Angular cache
+.angular/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Compiled output
+*.dll
+*.exe
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.tgz
+*.lock
+package-lock.json
+yarn.lock
+
+# Temporary files for debugging
+.npm/
+.tmp/
+temp/
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+.pnp/
+.pnp.js
+
+# Coverage directory used by testing tools
+coverage/
+
+# Ignore generated JSON files for local development
+src/assets/*.json
+!src/assets/i18n/*.json # Allow i18n files if used
+
+# Angular CLI
+.angular/cache
+
+# Other
+.vscode/
