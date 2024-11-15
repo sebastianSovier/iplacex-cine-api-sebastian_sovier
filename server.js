@@ -16,7 +16,7 @@ const options = {
     tlsAllowInvalidCertificates: true,
     tlsAllowInvalidHostnames: true,
   };
-await client.connect(options).then(() => {
+await client.connect().then(() => {
     console.log("db connected")
     app.listen(PORT, () => {
         console.log("Server running in port ", PORT)
